@@ -672,9 +672,11 @@ class MethodChannelMaplibreGl extends MapLibreGlPlatform {
   }
 
   @override
+  // ignore: must_call_super
   void dispose() {
-    super.dispose();
-    _channel.setMethodCallHandler(null);
+    // Nope !
+    // Seriously, I don't know why it works. I coppied google_map_flutter code:
+    // https://github.com/flutter/packages/blob/main/packages/google_maps_flutter/google_maps_flutter_android/lib/src/google_maps_flutter_android.dart
   }
 
   @override
