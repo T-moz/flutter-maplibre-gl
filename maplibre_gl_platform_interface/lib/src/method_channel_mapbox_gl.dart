@@ -153,7 +153,7 @@ class MethodChannelMaplibreGl extends MapLibreGlPlatform {
             );
           },
           onCreatePlatformView: (PlatformViewCreationParams params) {
-            final controller = PlatformViewsService.initAndroidView(
+            final controller = PlatformViewsService.initExpensiveAndroidView(
               id: params.id,
               viewType: 'plugins.flutter.io/mapbox_gl',
               layoutDirection: TextDirection.ltr,
